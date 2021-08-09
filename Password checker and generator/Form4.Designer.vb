@@ -72,12 +72,12 @@ Partial Class Form4
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox10, 8, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox9, 7, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox8, 6, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox6, 5, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox7, 4, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox5, 3, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox4, 2, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox3, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox6, 5, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox2, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox7, 4, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(280, 129)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1

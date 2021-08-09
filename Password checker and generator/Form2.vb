@@ -293,7 +293,36 @@ Public Class create
             End If
         End If
 
+        Dim MatchNumberPatternForConsectLetters As String = "(?=^asdfghjkl{3,}$)/)"
+        'If the password has ONLY these special characters then...
+        If TypingPassword.Text.Trim <> "" Or ConfirmingPassword.Text.Trim <> "" Then
+            If Not Regex.IsMatch(TypingPassword.Text, MatchNumberPatternForConsectLetters) Or Not Regex.IsMatch(ConfirmingPassword.Text, MatchNumberPatternForConsectLetters) Then
+                OnlySpecialChar = 0
+            Else
+                OnlySpecialChar = 5
+            End If
+        End If
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        'qwerty = 'qwertyuiopasdfghjklzxcvbnm'
+
+
+        '(?=^asdfghjkl{3,}$)/)
 
 
 

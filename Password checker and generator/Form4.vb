@@ -13,15 +13,28 @@
     Private Sub ContinueButton2_Click(sender As Object, e As EventArgs) Handles ShowStrengthButton.Click
         If FinalPoints >= 20 Then
             PasswordStrengthLabel.Text = "Strong"
-            PasswordStrengthLabel.ForeColor = Color.Green
+            PasswordStrengthLabel.ForeColor = Color.LightGreen
+            PasswordStrengthLabel.BackColor = Color.Black
+            PictureBox8.BackColor = Color.YellowGreen
+            PictureBox9.BackColor = Color.YellowGreen
+            PictureBox10.BackColor = Color.LimeGreen
+            PictureBox11.BackColor = Color.Lime
         End If
         If (FinalPoints > 0) And (FinalPoints < 20) Then
             PasswordStrengthLabel.Text = "Good"
             PasswordStrengthLabel.ForeColor = Color.Orange
+            PasswordStrengthLabel.BackColor = Color.Black
+            PictureBox8.BackColor = Color.Black
+            PictureBox9.BackColor = Color.Black
+            PictureBox10.BackColor = Color.Black
+            PictureBox11.BackColor = Color.Black
+
+
         End If
         If FinalPoints <= 0 Then
             PasswordStrengthLabel.Text = "Weak"
             PasswordStrengthLabel.ForeColor = Color.Red
+            PasswordStrengthLabel.BackColor = Color.Black
         End If
 
         '0 < FinalPoints < 20
@@ -30,5 +43,9 @@
         Form5.Show()
         Me.Hide()
         PasswordStrengthLabel.Text = ""
+    End Sub
+
+    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
